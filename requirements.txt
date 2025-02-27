@@ -1,4 +1,5 @@
 pytorch
+torchvision
 keras
 jupyter
 matplotlib
