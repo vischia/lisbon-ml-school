@@ -32,8 +32,8 @@ cd lisbon-ml-school/
 ##### 2.1 Using virtualenv
 
 ```
-virtualenv -p python3.10 venv_tutorial
-source venv_tutorial/bin/activate
+virtualenv -p python3.10 lisbon_ml_school
+source lisbon_ml_school/bin/activate
 pip install -r requirements.txt # or requirements_macos.txt on MacOS Monterey and upwards
 ```
 
@@ -44,9 +44,9 @@ To deactivate the environment, you should run `deactivate` from the command prom
 ##### 2.2 Using conda
 
 ```
-conda create --name venv_tutorial python==3.10
-conda activate venv_tutorial
-pip install -r requirements.txt # or requirements_macos.txt on MacOS Monterey
+conda create --name lisbon_ml_school python==3.10
+conda activate lisbon_ml_school
+conda install --file requirements.txt -c conda-forge # or requirements_macos.txt on MacOS Monterey
 ```
 
 To deactivate the environment, you should run `conda deactivate` from the command prompt.
