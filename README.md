@@ -27,36 +27,42 @@ git clone https://github.com/vischia/lisbon-ml-school.git
 cd lisbon-ml-school/
 ```
 
-#### 2. Create a python environment and install requirements (follow one of the options 2.1, 2.2, or 2.3)
+#### 2. Create a python environment and install requirements
 
-##### 2.1 Using virtualenv
+If your laptop can run ML models without too much hassle and you have some (approximately 5 GB) free disk space, follow the instructions in `2.1` or `2.2`. Otherwise, I suggest running on Colab by following the instructions in `2.3`.
+    
+##### 2.1 Using conda
+
+```
+conda create --name lisbon_ml_school python==3.10
+conda activate lisbon_ml_school
+conda install --file requirements.txt -c conda-forge -c pytorch -c nvidia -c scikit-learn
+pip install livelossplot
+```
+
+To deactivate the environment, you should run `conda deactivate` from the command prompt.
+
+##### 2.2 Using virtualenv
 
 ```
 virtualenv -p python3.10 lisbon_ml_school
 source lisbon_ml_school/bin/activate
-pip install -r requirements.txt # or requirements_macos.txt on MacOS Monterey and upwards
+pip install -r requirements.txt
 ```
 
 A participant of a previous school (Geoffrey Mullier) reports that on MacOS 12.5 `virtualenv` doesn't work, and that in that case `python3 -m venv venv_tutorial` works as intended.
 
 To deactivate the environment, you should run `deactivate` from the command prompt.
 
-##### 2.2 Using conda
-
-```
-conda create --name lisbon_ml_school python==3.10
-conda activate lisbon_ml_school
-conda install --file requirements.txt -c conda-forge # or requirements_macos.txt on MacOS Monterey
-```
-
-To deactivate the environment, you should run `conda deactivate` from the command prompt.
-
-
 ##### 2.3 Using Google Colab (google account needed)
 
 Go to [Google Colab](https://colab.research.google.com/), select `GitHub` as a source, and fill in the path to this repository (`https://github.com/vischia/data_science_school_igfae2024`). Possibly Google will ask for access to your GitHub account, although installing from a public third party repository should not require that, in principle.
 
 When the colab instance is active, open the jupyter notebook `train_hyp.ipynb` and run the cell labelled "*If you are using COLAB*"
+
+Note that, to have persistency of the files and changes, and to be able to push back the repository, you should use the first cells in the notebooks to load your google drive account.
+
+*While we can provide some limited help, it is expected that you set up your workflow in Colab independently.*
 
 
 #### 3. Run the tutorial
