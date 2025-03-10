@@ -12,3 +12,5 @@ seaborn
 shap
 uproot
 torchinfo
+plotly
+pyhf
