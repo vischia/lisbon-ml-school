@@ -56,7 +56,7 @@ To deactivate the environment, you should run `deactivate` from the command prom
 
 ##### 2.3 Using Google Colab (google account needed)
 
-Go to [Google Colab](https://colab.research.google.com/), select `GitHub` as a source, and fill in the path to this repository (`https://github.com/vischia/data_science_school_igfae2024`). Possibly Google will ask for access to your GitHub account, although installing from a public third party repository should not require that, in principle.
+Go to [Google Colab](https://colab.research.google.com/), select `GitHub` as a source, and fill in the path to this repository (`https://github.com/vischia/lisbon_ml_school`). Possibly Google will ask for access to your GitHub account, although installing from a public third party repository should not require that, in principle.
 
 When the colab instance is active, open the jupyter notebook `train_hyp.ipynb` and run the cell labelled "*If you are using COLAB*"
 
