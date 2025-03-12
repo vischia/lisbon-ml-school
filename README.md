@@ -85,3 +85,8 @@ jupyter nbconvert --to script lesson_1.ipynb
 
 This will create a file `lesson_1.py` that you can pass as a command line argument to the python interpreter.
 You may have to add a few `plt.show()` or `plt.savefig()` to the code here and there, to visualize/save outputs, though.
+
+
+## Prerequisites
+
+In order to minimize wifi usage at the workshop venue, please set up your environment and run the `prerequisites.ipynb` notebook in advance.
