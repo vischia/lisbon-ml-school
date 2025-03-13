@@ -47,10 +47,10 @@ To deactivate the environment, you should run `conda deactivate` from the comman
 ```
 virtualenv -p python3.10 lisbon_ml_school
 source lisbon_ml_school/bin/activate
-pip install -r requirements.txt
+pip install -r requirements_venv.txt
 ```
 
-A participant of a previous school (Geoffrey Mullier) reports that on MacOS 12.5 `virtualenv` doesn't work, and that in that case `python3 -m venv venv_tutorial` works as intended.
+A participant of a previous school (Geoffrey Mullier) reports that on MacOS 12.5 `virtualenv` doesn't work, and that in that case `python3.10 -m venv venv_tutorial` works as intended.
 
 To deactivate the environment, you should run `deactivate` from the command prompt.
 
