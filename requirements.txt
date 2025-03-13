@@ -14,3 +14,7 @@ uproot
 torchinfo
 plotly
 pyhf
+vector
+awkward
+pytorch-lightning>=1.4
+ipywidgets
